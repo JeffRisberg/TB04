@@ -1,0 +1,105 @@
+<!-- Form Elements -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Jeff Risberg">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+
+	<link href="css/datepicker.css" rel="stylesheet">
+	
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+		}
+	</style>
+	
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="ico/favicon.ico">
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-inner">
+			<a class="navbar-brand" href="index.html">TB03</a>
+			
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+				</ul>
+		
+			  <p class="navbar-text pull-right">
+          Logged in as <a href="#" class="navbar-link">Username</a>
+        </p>
+      </div>
+			<!--/.nav-collapse -->
+		</div>	  
+	</div>
+</div>
+
+<div class="container">
+  <h2>Form examples</h2>
+	<div class="row">
+    <div class="col-md-4">
+
+			<h4>Select example</h4>  
+			<select>
+			  <option>Alpha</option>
+			  <option selected>Beta</option>
+			  <option>Gamma</option>
+			</select>
+    </div>
+    
+    <div class="col-md-4">
+			<h4>Datepicker example</h4>	
+			<input type="text" id="reportDate"/>
+    </div>
+    
+    <div class="col-md-4">
+      <h4>Datepicker range example</h4>
+      <div class="input-daterange" id="datepicker">
+        <input type="text" class="input-small" name="start" />
+        <span class="add-on">to</span>
+        <input type="text" class="input-small" name="end" />
+      </div>
+    </div>
+  </div>
+
+	<hr>
+
+  <footer>
+    <div class="row">
+      <div class="col-xs-10">
+        <p>&copy; Company 2014-2016</p>
+      </div>
+      <div class="col-xs-2" style="text-align: right">
+        <p>All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+	
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#reportDate').datepicker({dateFormat: 'yy-MM-dd'});
+    $('.input-daterange').datepicker({ });
+  });
+</script>
+</body>
+</html>
