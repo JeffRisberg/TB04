@@ -2,167 +2,160 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Twitter Bootstrap</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Jeff Risberg">
-	
-	<link href="css/bootstrap.css" rel="stylesheet">
-	
-	<style type="text/css">
-	body {
-		padding-top: 60px;
-	}
-	
-	.sidebar-nav {
-		padding: 9px 0;
-	}
-	</style>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jeff Risberg">
 
-	<link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <style type="text/css">
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="ico/favicon.ico">
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-inner">
-      <a class="navbar-brand" href="index.html">TB04</a>
-      
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">TB04</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
         </ul>
-    
-        <p class="navbar-text pull-right">
-          Logged in as <a href="#" class="navbar-link">Username</a>
-        </p>
-      </div>
-      <!--/.nav-collapse -->
-    </div>    
-  </div>
-</div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
 
 <div class="container">
-  <div class="row">
-			<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
 
-				<div class="navbar navbar-static" id="navbar-example">
-					<div class="navbar-inner">
-							
-						<ul role="navigation" class="nav navbar-nav">
-							<li class="dropdown">
-							  <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
-									Dropdown 1 <b class="caret"></b>
-							  </a>
-								<ul class="dropdown-menu">
-									<li><a href="http://google.com" tabindex="-1">Action</a></li>
-									<li><a href="#anotherAction" tabindex="-1">Another action</a></li>
-									<li><a href="#" tabindex="-1">Something else here</a></li>
-									<li class="divider"></li>
-									<li><a href="#" tabindex="-1">Separated link</a></li>
-								</ul>
-						  </li>
-							<li class="dropdown">
-							  <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
-									Dropdown 2 <b class="caret"></b>
-							  </a>
-								<ul role="menu" class="dropdown-menu">
-									<li><a href="#" tabindex="-1">Action</a></li>
-									<li><a href="#" tabindex="-1">Another action</a></li>
-									<li><a href="#" tabindex="-1">Something else here</a></li>
-									<li class="divider"></li>
-									<li><a href="#" tabindex="-1">Separated link</a></li>
-								</ul>
-						  </li>
-						</ul>
-						<ul class="nav navbar-nav pull-right">
-							<li class="dropdown">
-							  <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#"> 
-							    Dropdown 3 <b class="caret"></b>
-							  </a>
-								<ul role="menu" class="dropdown-menu">
-									<li><a href="#" tabindex="-1">Action</a></li>
-									<li><a href="#" tabindex="-1">Another action</a></li>
-									<li><a href="#" tabindex="-1">Something else here</a></li>
-									<li class="divider"></li>
-									<li><a href="#" tabindex="-1">Separated link</a></li>
-								</ul>
-						  </li>
-						</ul>
-					
-					</div>
-				</div>
-				<!-- /navbar-example -->
-			</div>
-	  </div>
-				
-		<div class="dropdown">
-       <a id="dropX" data-toggle="dropdown" class="dropdown-toggle" role="button" href="#"> 
-         Dropdown X <b class="caret"></b>
-       </a>
-       <ul aria-labelledby="dropX" role="menu" class="dropdown-menu">
-         <li><a href="#" tabindex="-1">Action</a></li>
-         <li><a href="#" tabindex="-1">Another action</a></li>
-         <li><a href="#" tabindex="-1">Something else here</a></li>
-         <li class="divider"></li>
-         <li><a href="#" tabindex="-1">Separated link</a></li>
-       </ul>
-     </div>
-   
-     <p>&nbsp;</p>
-         
-		<a id="pop1" href="#" class="btn btn-info" rel="popover"
-		  data-original-title="My Popover Title" data-content="This is my popover content" >
-		  Click for popover 1
-		</a>		
-	
-	  <p>&nbsp;</p>
-	  	
-		<a id="pop2" href="#" class="btn btn-info" rel="popover"
-     data-original-title="Your Move" data-html="true" data-content="I've seen <b>all good people</b> turn their heads each day so satisfied I'm on my way" >
-     Hover for popover 2
-     </a>
-		
-	  <p>&nbsp;</p>
-     
-     <p>Your Progress 1:</p>
-     <div class="progress progress-striped active">
-       <div class="progress-bar" style="width: 40%;"></div>
-     </div>
-     
-     <p>Your Progress 2:</p>
-     <div class="progress progress-striped active">
-       <div class="progress-bar" style="width: 75%;"></div>
-     </div>
-         
-	<hr>
+            <div class="navbar navbar-static" id="navbar-example">
+                <div class="navbar-inner">
 
-	<footer>
-		<div class="row">
-			<div class="col-sm-6" style="padding: 6px">
-				<p>&copy; Company 2014-2018</p>
-			</div>
-			<div class="col-sm-6" style="padding: 6px; text-align: right">
-				<p>All Rights Reserved</p>
-			</div>
-		</div>
-	</footer>
+                    <ul role="navigation" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
+                                Dropdown 1 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://google.com" tabindex="-1">Action</a></li>
+                                <li><a href="#anotherAction" tabindex="-1">Another action</a></li>
+                                <li><a href="#" tabindex="-1">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" tabindex="-1">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
+                                Dropdown 2 <b class="caret"></b>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="#" tabindex="-1">Action</a></li>
+                                <li><a href="#" tabindex="-1">Another action</a></li>
+                                <li><a href="#" tabindex="-1">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" tabindex="-1">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
+                                Dropdown 3 <b class="caret"></b>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="#" tabindex="-1">Action</a></li>
+                                <li><a href="#" tabindex="-1">Another action</a></li>
+                                <li><a href="#" tabindex="-1">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" tabindex="-1">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /navbar-example -->
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a id="dropX" data-toggle="dropdown" class="dropdown-toggle" role="button" href="#">
+            Dropdown X <b class="caret"></b>
+        </a>
+        <ul aria-labelledby="dropX" role="menu" class="dropdown-menu">
+            <li><a href="#" tabindex="-1">Action</a></li>
+            <li><a href="#" tabindex="-1">Another action</a></li>
+            <li><a href="#" tabindex="-1">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#" tabindex="-1">Separated link</a></li>
+        </ul>
+    </div>
+
+    <p>&nbsp;</p>
+
+    <a id="pop1" href="#" class="btn btn-info" rel="popover"
+            data-original-title="My Popover Title" data-content="This is my popover content">
+        Click for popover 1
+    </a>
+
+    <p>&nbsp;</p>
+
+    <a id="pop2" href="#" class="btn btn-info" rel="popover"
+            data-original-title="Your Move" data-html="true"
+            data-content="I've seen <b>all good people</b> turn their heads each day so satisfied I'm on my way">
+        Hover for popover 2
+    </a>
+
+    <p>&nbsp;</p>
+
+    <p>Your Progress 1:</p>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" style="width: 40%;"></div>
+    </div>
+
+    <p>Your Progress 2:</p>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" style="width: 75%;"></div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-6" style="padding: 6px">
+                <p>&copy; Company 2014-2018</p>
+            </div>
+            <div class="col-sm-6" style="padding: 6px; text-align: right">
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.js"></script>
-    
+
 <script type="text/javascript">
-  $(function () {           
-    $("#pop1").popover();  
-    $("#pop2").popover({trigger: 'hover'});          
-  });  
+  $(function () {
+    $("#pop1").popover();
+    $("#pop2").popover({ trigger: 'hover' });
+  });
 </script>
 </body>
 </html>

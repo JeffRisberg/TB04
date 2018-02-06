@@ -11,9 +11,6 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		
 		<style type="text/css">
-		  body {
-		    padding-top: 60px;
-		  }		 
 		</style>
 
 		<link rel="shortcut icon" href="ico/favicon.ico">
