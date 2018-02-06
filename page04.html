@@ -13,10 +13,6 @@
     <link rel="stylesheet/less" type="text/css" href="css/styles.less">
 
     <style type="text/css">
-        body {
-            padding-top: 60px;
-        }
-
         .sidebar-nav {
             padding: 9px 0;
         }
@@ -26,31 +22,29 @@
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-inner">
 
-            <a class="navbar-brand" href="index.html">TB04</a>
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <p class="navbar-text pull-right">
-                    Logged in as <a href="#" class="navbar-link">Username</a>
-                </p>
-            </div><!--/.navbar-collapse -->
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">TB04</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-</div>
+</nav>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-2">
             <!--Sidebar content-->
-            <ul class="nav nav-list">
+            <ul class="nav list-group">
                 <li class="nav-header">Sidebar</li>
                 <li class="active"><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
